@@ -1,0 +1,9 @@
+.cardBestP{
+    max-width: 300px;
+    display: grid;
+    gap: 40px;
+    margin: 0 auto;
+}
+.cardBestP__img{
+    width: 100%;
+}

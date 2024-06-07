@@ -1,0 +1,63 @@
+/* Estilos contenedor principal */
+.footer {
+  background-color: #111827;
+  color: #d7e7eb;
+  display: grid;
+  grid-template-areas:
+    "empresa redes links"
+    "linea linea linea"
+    "descripcion descripcion descripcion";
+  grid-template-columns: repeat(3, 1fr);
+}
+/* Estilos en comun de las celdas */
+.footer__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+/* Estilos de la celda de empresas */
+.footer__grid--empresa {
+  grid-area: empresa;
+  align-items: flex-start;
+}
+/* Estilos de la celda de las rrss */
+.footer__grid--redes {
+  grid-area: redes;
+  gap: 30px;
+}
+/* Estilos de los iconos */
+.redes__rrss {
+  display: flex;
+  gap: 15px;
+}
+.redes__icon {
+  font-size: 26px;
+  transition-duration: 0.5s;
+}
+.redes__icon:hover {
+  transform: translateY(-7px);
+}
+/* Estilos de la celda de links */
+.footer__grid--links {
+  grid-area: links;
+}
+.links__lista{
+    list-style: none;
+}
+.links__item a{
+    color: #d7e7eb;
+    text-decoration: none;
+}
+.links__item a:hover{
+    text-decoration: underline;
+}
+.footer__linea {
+  grid-area: linea;
+  margin: 0 20px;
+}
+.footer__descripcion {
+  grid-area: descripcion;
+  text-align: center;
+  padding: 20px 0;
+}

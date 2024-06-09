@@ -1,42 +1,42 @@
 /* Padding lateral del navBar */
-.itemContainer{
-    padding: 0 50px;
+.itemContainer {
+  padding: 0 50px;
 }
 
 /* Estilos de la barra de Busqueda */
-.barSearch{
-    outline: 2px solid #000;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding:5px 8px;
-    border-radius: 5px;
-    width: 450px;
+.barSearch {
+  outline: 2px solid #000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  width: 450px;
 }
-.barSearch__input{
-    border: none;
-    outline: none;
-    width: 100%;
+.barSearch__input {
+  border: none;
+  outline: none;
+  width: 100%;
 }
 
 /* Estilos de la X que se genera en la barra de busqueda */
 input[type="search"]::-webkit-search-cancel-button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Estilos generales de los iconos */
-.bi{
-    cursor: pointer;
+.bi {
+  cursor: pointer;
 }
 /* Tamaño del icono del carrito de compras */
-.bi-cart3{
-    font-size: 20px;
+.bi-cart3 {
+  font-size: 20px;
 }
 /* Tamaño de la imagen de usuario */
-.lista__user{
-    width: 40px    ;
-    border-radius: 50%;
+.lista__user {
+  width: 40px;
+  border-radius: 50%;
 }
-    .lista{
-        gap: 20px;
-    }
+.lista {
+  gap: 20px;
+}

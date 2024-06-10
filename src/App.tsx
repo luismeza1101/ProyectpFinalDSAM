@@ -1,19 +1,17 @@
-import './App.css'
-import BestProducts from './components/BestProducts'
-import Carousel from './components/Carousel'
-import Footer from './components/Footer'
-import Header from './components/Header'
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Help from "./pages/Help";
+import Home from "./pages/Home";
 
 function App() {
-
   return (
-    <>
-      <Header />
-      <Carousel />
-      <BestProducts />
-      <Footer/>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/help" element={<Help />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

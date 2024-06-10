@@ -1,0 +1,12 @@
+.form{
+    width: 50%;
+    margin: 40px auto;
+}
+.form__info{
+    color: #999;
+}
+.datosP{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}

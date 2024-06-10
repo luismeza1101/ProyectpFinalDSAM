@@ -2,6 +2,7 @@ import { useState } from 'react';
 import '../StyleSheets/Header.css'
 import OptionAccount from './OptionAccount';
 import CarrShop from './CarrShop';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
 
@@ -19,9 +20,9 @@ const Header: React.FC = () => {
     <nav className="navbar navbar-expand-md">
       <div className="container-fluid itemContainer">
         {/* Logo */}
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to='/'>
           Navbar
-        </a>
+        </Link>
         {/* Boton de despliege, cuando sea una pantalla mas pequeña */}
         <button
           className="navbar-toggler"
@@ -53,9 +54,9 @@ const Header: React.FC = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to='/help'>
                 Ayuda
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" aria-disabled="true" onClick={handleCarShop}>

@@ -1,4 +1,12 @@
 .products{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% 70%;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+.productCard__img{
+    width: 307px;
+    height: 307px;
+    margin: auto;
 }

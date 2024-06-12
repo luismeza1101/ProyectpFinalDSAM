@@ -6,17 +6,32 @@ import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
 
+  // Hooks para manejar si se muestran los modales o no
   const [modalOptions, setModalOptions] = useState<boolean>(false);
   const [carShop, setCarShop] = useState<boolean>(false);
 
+  // Funcion para mostrar u ocultar el modal de las opciones de la cuenta
   const handleModalOptions = () => {
-    modalOptions ? setModalOptions(false) : setModalOptions(true)
+    if(modalOptions){
+      setModalOptions(false)
+    } else{
+      setModalOptions(true)
+      setCarShop(false)
+    }
   }
+  
+  // Funcion para mostrar u ocultar el modal del carrito de compras
   const handleCarShop = () => {
-    carShop ? setCarShop(false) : setCarShop(true)
+    if(carShop){
+      setCarShop(false) 
+      } else {
+      setCarShop(true)
+      setModalOptions(false)
+    }
   }
   
   return (
+    // Header de la pagina
     <nav className="navbar navbar-expand-md">
       <div className="container-fluid itemContainer">
         {/* Logo */}
@@ -49,24 +64,28 @@ const Header: React.FC = () => {
         <div className="navbar enlaces" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 align-items-center lista">
             <li className="nav-item">
+              {/* Link que manda a la pagina de categorias */}
               <Link className="nav-link active" to="/categories">
                 Categorias
               </Link>
             </li>
             <li className="nav-item">
+              {/* Link que manda a la pagina de ayuda */}
               <Link className="nav-link" to='/help'>
                 Ayuda
               </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" aria-disabled="true" onClick={handleCarShop}>
+                {/* Icono que despliega el carrito de compras */}
                 <i className="bi bi-cart3"></i>
               </a>
               {carShop ? <CarrShop/> : null}
             </li>
             <li className="nav-item">
+              {/* Imagen que despliega las opciones de cuenta */}
               <a className="nav-link active" aria-current="page" href="#" onClick={handleModalOptions}>
-                <img className='lista__user' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKs0c95ju7Jd7fwULRkXi7fyesaSINpAyJlQ&s" alt="" />
+                <img className='lista__user' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKs0c95ju7Jd7fwULRkXi7fyesaSINpAyJlQ&s" alt="Imagen de perfil" />
               </a>
               {modalOptions ? <OptionAccount/> : null}
             </li>

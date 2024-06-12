@@ -5,10 +5,15 @@ import Header from "../components/Header"
 
 const Home = () => {
   return (
+    // Pagina principal
     <>
+     {/*Header  */}
         <Header/>
+        {/* Carrusel de productos en oferta */}
         <Carousel/>
+        {/* Sección de los productos mas vendidos */}
         <BestProducts/>
+        {/* Footer */}
         <Footer/>
     </>
   )

@@ -6,8 +6,10 @@ interface Props {
 
 const QuestionFrequent: React.FC<Props> = ({index, pregunta, respuesta}) => {
   return (
+    // Acordion de preguntas frecuentes
     <div className="accordion-item">
       <h2 className="accordion-header">
+        {/* Boton para desplegar el acordeon */}
         <button
           className="accordion-button collapsed"
           type="button"
@@ -16,6 +18,7 @@ const QuestionFrequent: React.FC<Props> = ({index, pregunta, respuesta}) => {
           aria-expanded="false"
           aria-controls={`collapse${index}`}
         >
+          {/* Contenido de la pregunta */}
           {pregunta}
         </button>
       </h2>

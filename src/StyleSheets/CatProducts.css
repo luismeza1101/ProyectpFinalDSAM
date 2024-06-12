@@ -1,0 +1,14 @@
+.listProducts{
+    background-color: #E8E8E8;
+    padding: 20px;
+    border-radius: 10px;
+}
+.listItem__item{
+    background-color: transparent;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+.listItem__item:hover{
+    background-color: #dddcdc;
+    color: rgb(248, 65, 65);
+}

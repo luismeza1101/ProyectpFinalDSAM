@@ -49,9 +49,9 @@ const Header: React.FC = () => {
         <div className="navbar enlaces" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 align-items-center lista">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link className="nav-link active" to="/categories">
                 Categorias
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to='/help'>

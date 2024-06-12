@@ -28,3 +28,37 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+# Contenido de los componentes
+
+ - BestProducts : Contienen los productos mas vendidos de la pagina principal, es el contenedor de todo el contenido, contiene CardBestProduct
+
+ - CardBestProduct: Es la carta donde se encuentra el producto mas vendido, contiene una imagen del producto y su nombre
+
+ - Carousel: Contiene el carrusel de las imagenes que muestran las ofertas que hay en la tienda, esta en la ventana principal
+
+ - CarrShop: Es el carrito de compras que se muestra cuando se hace click en el icono que esta en el Header, contiene el ProductCar
+
+ - Footer: Es el footer de la pagina, contiene los links de las redes sociales y mas
+
+ - FormContact: Es el formulario que se usa para que los clientes puedan escribir sus dudas o quejas que tienen, esta en la pagina de ayuda
+
+ - Header: Es el header de la pagina, contiene el logo de la empresa, una barra de busqueda de productos y las secciones de opciones de cuenta, el carrito y para acceder a la pagina de ayuda y de categorias
+
+ - OptionAccount: Es el modal que se muestra cuando se hace click en la imagen de perfil del usuario, muestra las opciones de la cuenta
+
+ - ProductCar: Son los elementos que hay dentro del carrito de compras, son todos los productos que añadimos
+
+ -QuestionFrequent: Son las preguntas frecuentes que dan respuesta a las dudas comunes de los clientes, esta en la pagina de ayuda
+
+ # Contenido de las paginas
+
+ - Home: Contiene el Header, Carousel, BestProducts y el Footer
+
+ - Help: Contiene el Header, QuestionFrequent, FormContact, Footer
+
+ - Categories: Contiene Header, Lista de productos, Filtro de productos, Footer
+ (EN PROCESO)
+
+ # Contenido CSS
+ - Cada archivo tiene sus estilos en el archivo css de su mismo nombre

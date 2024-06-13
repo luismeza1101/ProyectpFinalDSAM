@@ -53,6 +53,10 @@ export default {
 
  - MisionVision : Contiene la mision y vision de la empresa
 
+ - ProductInfo: Contiene los datos de cada producto, imagen, precio e informacion adicional
+
+ - InfoAdicionalProduct: contiene la tabla donde ira informacion adicional de cada producto
+
  # Contenido de las paginas
 
  - Home: Contiene el Header, Carousel, BestProducts, MisionVision y el Footer
@@ -64,5 +68,6 @@ export default {
  
  - CarShoping: Pagina del carrito de compras que tiene una lista de todos los productos y un resumen de la compra
 
+ - DataProductos: Pagina individual de cada producto, donde se detalla su informacion
  # Contenido CSS
  - Cada archivo tiene sus estilos en el archivo css de su mismo nombre

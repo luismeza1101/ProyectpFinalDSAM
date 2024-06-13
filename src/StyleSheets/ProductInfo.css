@@ -1,0 +1,29 @@
+.data{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+}
+.data__imagen img{
+    object-fit: cover;
+    width: 100%;
+}
+.info{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+.general__id{
+    color: #aaa;
+}
+.precios__tabla{
+    width: 80%;
+}
+.cantidad{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cantidad__agregar{
+    width: 40%;
+}

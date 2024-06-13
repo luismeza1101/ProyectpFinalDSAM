@@ -1,28 +1,13 @@
 import { useState } from 'react'
 import '../StyleSheets/ProductCar.css'
+import { decreaseCant, increaseCant } from '../fuctions'
 
 const ProductCar = () => {
 
     // Hook para manejar la cantidad de productos que puede comprar una persona
     const [minCant, setMinCant] = useState(1)
 
-    // Funcion para aumentar la cantidad de productos
-    const increaseCant = () =>{
-        if(minCant == 9){
-            alert('Solo puedes comprar un maximo de 9 productos')
-        } else {
-            setMinCant(minCant + 1)
-        }
-    }
-    
-    // Funcion para disminuir la cantidad de productos
-    const decreaseCant = () =>{
-        if(minCant == 1){
-            alert('Debes comprar como minimo un producto')
-        } else {
-            setMinCant(minCant - 1)
-        }
-    }
+
 
   return (
     <>
@@ -37,9 +22,9 @@ const ProductCar = () => {
           </div>
           {/* Botones para calcular la cantidad y eliminar un producto */}
           <div className='actuDatos'>
-            <button className="btn btn-secondary" onClick={decreaseCant}>-</button>
+            <button className="btn btn-secondary" onClick={() =>decreaseCant(minCant, setMinCant)}>-</button>
             <p className='actuDatos__cant m-auto'>{minCant}</p>
-            <button className="btn btn-secondary" onClick={increaseCant}>+</button>
+            <button className="btn btn-secondary" onClick={() =>increaseCant(minCant, setMinCant)}>+</button>
             <button type="button" className="btn btn-danger"><i className="bi bi-trash-fill"></i></button>
           </div>
         </div>

@@ -49,11 +49,13 @@ export default {
 
  - ProductCar: Son los elementos que hay dentro del carrito de compras, son todos los productos que añadimos
 
- -QuestionFrequent: Son las preguntas frecuentes que dan respuesta a las dudas comunes de los clientes, esta en la pagina de ayuda
+ - QuestionFrequent: Son las preguntas frecuentes que dan respuesta a las dudas comunes de los clientes, esta en la pagina de ayuda
+
+ - MisionVision : Contiene la mision y vision de la empresa
 
  # Contenido de las paginas
 
- - Home: Contiene el Header, Carousel, BestProducts y el Footer
+ - Home: Contiene el Header, Carousel, BestProducts, MisionVision y el Footer
 
  - Help: Contiene el Header, QuestionFrequent, FormContact, Footer
 

@@ -1,0 +1,13 @@
+.objetivos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 150px auto 100px auto;
+}
+.mision, .vision{
+    max-width: 30%;
+    text-align: center;
+}
+.icon{
+    font-size: 4rem;
+}

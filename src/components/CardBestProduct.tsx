@@ -1,13 +1,16 @@
 import '../StyleSheets/CardBestProduct.css'
-
-const CardBestProduct = () => {
+interface CardBestProductProps {
+  title: string;
+  image: string;
+}
+const CardBestProduct: React.FC<CardBestProductProps> = (props) =>{
   return (
     //Carta del producto mas vendido
     <div className='cardBestP'>
       {/* Imagen del producto */}
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLIXmBEJvs0IGNGQGfrgsU0MbPPmCMPTSuVA&s" alt="..."  className='cardBestP__img'/>
+      <img src= {props.image} alt="..."  className='cardBestP__img'/>
       {/* Nombre del producto */}
-      <p className='cardBestP__text'>Lorem ipsum, dolor sit amet </p>
+      <p className='cardBestP__text'> {props.title} </p>
     </div>
   )
 }

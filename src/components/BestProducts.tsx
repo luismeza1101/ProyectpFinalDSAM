@@ -8,10 +8,10 @@ const BestProducts = () => {
     <h2>Lo mas vendido</h2>
         <section className='bestProducts'>
           {/* Cartas de los productos mas vendidos */}
-            <CardBestProduct />
-            <CardBestProduct />
-            <CardBestProduct />
-            <CardBestProduct />
+            <CardBestProduct title ='SALA' image='./sala.jpg'/>
+            <CardBestProduct title ='DORMITORIO' image='./dormitorio.jpg'/>
+            <CardBestProduct title ='ARMARIOS' image='./roperos.jpg'/>
+            <CardBestProduct title ='COCINA' image='./cocina.jpg'/>
         </section>
     </div>
   );

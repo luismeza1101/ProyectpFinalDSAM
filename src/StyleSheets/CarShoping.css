@@ -1,0 +1,16 @@
+.carShop{
+    display: grid;
+    grid-template-areas: 
+    'titulo titulo'
+    'listP pago';
+    text-align: center;
+    gap: 30px;
+    grid-template-columns: 55% 35%;
+}
+.carShop__titulo{
+    grid-area: titulo;
+}
+.listP{
+    grid-area: listP;
+    margin: 0 30px;
+}

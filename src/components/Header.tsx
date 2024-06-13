@@ -1,14 +1,12 @@
 import { useState } from 'react';
 import '../StyleSheets/Header.css'
 import OptionAccount from './OptionAccount';
-import CarrShop from './CarrShop';
 import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
 
   // Hooks para manejar si se muestran los modales o no
   const [modalOptions, setModalOptions] = useState<boolean>(false);
-  const [carShop, setCarShop] = useState<boolean>(false);
 
   // Funcion para mostrar u ocultar el modal de las opciones de la cuenta
   const handleModalOptions = () => {
@@ -16,19 +14,9 @@ const Header: React.FC = () => {
       setModalOptions(false)
     } else{
       setModalOptions(true)
-      setCarShop(false)
     }
   }
   
-  // Funcion para mostrar u ocultar el modal del carrito de compras
-  const handleCarShop = () => {
-    if(carShop){
-      setCarShop(false) 
-      } else {
-      setCarShop(true)
-      setModalOptions(false)
-    }
-  }
   
   return (
     // Header de la pagina
@@ -75,12 +63,11 @@ const Header: React.FC = () => {
                 Ayuda
               </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" aria-disabled="true" onClick={handleCarShop}>
-                {/* Icono que despliega el carrito de compras */}
+            <li className="nav-item item__carrito">
+              <Link className="nav-link" aria-disabled="true" to='/carShop'>
+                {/* Icono que manda a la pagina del carrito de compras */}
                 <i className="bi bi-cart3"></i>
-              </a>
-              {carShop ? <CarrShop/> : null}
+              </Link>
             </li>
             <li className="nav-item">
               {/* Imagen que despliega las opciones de cuenta */}

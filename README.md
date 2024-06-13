@@ -37,7 +37,7 @@ export default {
 
  - Carousel: Contiene el carrusel de las imagenes que muestran las ofertas que hay en la tienda, esta en la ventana principal
 
- - CarrShop: Es el carrito de compras que se muestra cuando se hace click en el icono que esta en el Header, contiene el ProductCar
+ - ModalPagos: Modal donde se ve el resumen de todas las cosas que el cliente añadio al carrito de compras, esta en la pagina del carrito
 
  - Footer: Es el footer de la pagina, contiene los links de las redes sociales y mas
 
@@ -59,6 +59,8 @@ export default {
 
  - Categories: Contiene Header, Lista de productos, Filtro de productos, Footer
  (EN PROCESO)
+ 
+ - CarShoping: Pagina del carrito de compras que tiene una lista de todos los productos y un resumen de la compra
 
  # Contenido CSS
  - Cada archivo tiene sus estilos en el archivo css de su mismo nombre

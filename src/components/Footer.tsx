@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../StyleSheets/Footer.css";
 
 const Footer = () => {
@@ -27,16 +28,13 @@ const Footer = () => {
         <h4 className="links__titulo">Links</h4>
         <ul className="links__lista">
           <li className="links__item">
-            <a href="">Inicio</a>
+            <Link to="/">Inicio</Link>
           </li>
           <li className="links__item">
-            <a href="">Nosotros</a>
+            <Link to="/help">Contactanos</Link>
           </li>
           <li className="links__item">
-            <a href="">Contactanos</a>
-          </li>
-          <li className="links__item">
-            <a href="">Servicios</a>
+            <Link to="/categories">Productos</Link>
           </li>
         </ul>
       </div>

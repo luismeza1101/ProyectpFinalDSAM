@@ -1,3 +1,7 @@
+/* Ocultar las opciones para el modo mobile */
+.enlaces-mobile{
+  display: none;
+}
 /* Padding lateral del navBar */
 .itemContainer {
   padding: 0 50px;
@@ -40,4 +44,31 @@ input[type="search"]::-webkit-search-cancel-button {
 .lista {
   gap: 20px;
 }
+/* Estilos cuando la pantalla tiene menos de  991px*/
 
+@media screen and (max-width: 991.20px) {
+  /* Igualar el tamaño del header*/
+  .navbar{
+    padding: 24px 0;
+    position: relative;
+  }
+  /* Ocultar la lista de opciones del modo desktop */
+  .enlaces-desktop{
+    display: none;
+  }
+  /* Posicionar la lista de opciones desplegable */
+  .enlaces-mobile{
+    display: block;
+    position: absolute;
+    background-color: #F8F9FA;
+    z-index: 100;
+    top: 88px;
+    right: 0;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .barSearch{
+    max-width: 250px;
+  }
+}

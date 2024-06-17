@@ -21,40 +21,35 @@ const LinksHeader: React.FC<Props> = ({size}) => {
   };
     // Lista de enlaces
   return (
-    <div className={`navbar enlaces-${size}`} id="navbarSupportedContent">
-    <ul className="navbar-nav me-auto mb-2 mb-lg-0 align-items-center lista">
-      <li className="nav-item">
+    <div className={`enlaces enlaces-${size}`} id="navbarSupportedContent">
+    <ul className="lista">
+      <li className="lista__item">
         {/* Link que manda a la pagina de categorias */}
-        <Link className="nav-link active" to="/categories">
+        <Link className="lista__link" to="/categories">
           Categorias
         </Link>
       </li>
-      <li className="nav-item">
+      <li className="lista__item">
         {/* Link que manda a la pagina de ayuda */}
-        <Link className="nav-link" to="/help">
+        <Link className="lista__link" to="/help">
           Ayuda
         </Link>
       </li>
-      <li className="nav-item item__carrito">
-        <Link className="nav-link" aria-disabled="true" to="/carShop">
+      <li className="lista__item item__carrito">
+        <Link className="lista__link" aria-disabled="true" to="/carShop">
           {/* Icono que manda a la pagina del carrito de compras */}
           <i className="bi bi-cart3"></i>
         </Link>
       </li>
-      <li className="nav-item">
+      <li className="lista__item lista__item--account">
         {/* Imagen que despliega las opciones de cuenta */}
-        <a
-          className="nav-link active"
-          aria-current="page"
-          href="#"
-          onClick={handleModalOptions}
-        >
+        <span className="lista__link lista__link--account" onClick={() => handleModalOptions()}>
           <img
             className="lista__user"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKs0c95ju7Jd7fwULRkXi7fyesaSINpAyJlQ&s"
             alt="Imagen de perfil"
           />
-        </a>
+        </span>
         {modalOptions ? <OptionAccount /> : null}
       </li>
     </ul>

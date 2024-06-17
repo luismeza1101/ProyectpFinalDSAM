@@ -1,10 +1,12 @@
-/* Ocultar las opciones para el modo mobile */
-.enlaces-mobile{
-  display: none;
+.nav{
+  height: 70px; 
 }
-/* Padding lateral del navBar */
-.itemContainer {
-  padding: 0 50px;
+.containerNav{
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Estilos de la barra de Busqueda */
@@ -16,6 +18,7 @@
   padding: 5px 8px;
   border-radius: 5px;
   width: 450px;
+  margin: 0 auto; 
 }
 .barSearch__input {
   border: none;
@@ -41,9 +44,34 @@ input[type="search"]::-webkit-search-cancel-button {
   width: 40px;
   border-radius: 50%;
 }
-.lista {
-  gap: 20px;
+/* Posicionar llos links */
+.enlaces{
+  height: 100%;
 }
+.lista{
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+}
+.lista__link{
+  color: #000;
+  text-decoration: none;
+}
+/* Ocultar las opciones para el modo mobile */
+.enlaces-mobile{
+  display: none;
+}
+
+/* Cursor para opciones de cuenta */
+.lista__link--account{
+  cursor: pointer;
+}
+.lista__item--account{
+  position: relative;
+}
+
 /* Estilos cuando la pantalla tiene menos de  991px*/
 
 @media screen and (max-width: 991.20px) {
@@ -55,6 +83,7 @@ input[type="search"]::-webkit-search-cancel-button {
   /* Ocultar la lista de opciones del modo desktop */
   .enlaces-desktop{
     display: none;
+    background-color: red;
   }
   /* Posicionar la lista de opciones desplegable */
   .enlaces-mobile{

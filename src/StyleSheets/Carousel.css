@@ -1,4 +1,8 @@
 .ofertas{
     background-color: #888;
     height: 400px;
+
 }
+.ofertas >.carousel-inner > .carousel-item >  img{
+    height:400px;
+  }

@@ -13,19 +13,19 @@ const Carousel: React.FC = () => {
         {/* Item idenpendiente */}
         <div className="carousel-item active">
           {/* Imagen que ira en el carrusel */}
-          <img src="..." className="d-block w-100" alt="..." />
+          <img src="./banner1.png" className="d-block w-100 " alt="banner1" />
         </div>
 
         {/* Item idenpendiente */}
         <div className="carousel-item">
           {/* Imagen que ira en el carrusel */}
-          <img src="..." className="d-block w-100" alt="..." />
+          <img src="./banner2.png" className="d-block w-100" alt="banner2" />
         </div>
 
         {/* Item idenpendiente */}
         <div className="carousel-item">
           {/* Imagen que ira en el carrusel */}
-          <img src="..." className="d-block w-100" alt="..." />
+          <img src="./banner3.png" className="d-block w-100" alt="./banner3" />
         </div>
       </div>
       {/* Botones para controlar el carrusel */}

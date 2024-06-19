@@ -1,0 +1,12 @@
+/* Posicionar el boton para cerrar el menu de links */
+.btn--close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.lista--mobile{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}

@@ -72,28 +72,38 @@ input[type="search"]::-webkit-search-cancel-button {
   position: relative;
 }
 
+/* Estilos del boton para mostrar los links */
+.navbar-toggler{
+  display: none;
+  font-size: 1.5em;
+}
+
 /* Estilos cuando la pantalla tiene menos de  991px*/
 
 @media screen and (max-width: 991.20px) {
-  /* Igualar el tamaño del header*/
-  .navbar{
-    padding: 24px 0;
-    position: relative;
+  /* Mostar el boton de despliegue de opciones */
+  .navbar-toggler{
+    display: block;
   }
   /* Ocultar la lista de opciones del modo desktop */
   .enlaces-desktop{
     display: none;
-    background-color: red;
   }
   /* Posicionar la lista de opciones desplegable */
   .enlaces-mobile{
-    display: block;
-    position: absolute;
+    display: flex;
+    position: fixed;
     background-color: #F8F9FA;
     z-index: 100;
-    top: 88px;
     right: 0;
-    width: 200px;
+    top: 0;
+    height: 100%;
+    transform: translateX(100%);
+    transition-duration: .5s;
+    border-left: 1px solid #000;
+  }
+  .showLinks{
+    transform: translateX(0);
   }
 }
 @media screen and (max-width: 775px) {

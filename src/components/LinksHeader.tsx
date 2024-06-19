@@ -2,11 +2,8 @@ import OptionAccount from "./OptionAccount";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-interface Props{
-    size: string
-}
 
-const LinksHeader: React.FC<Props> = ({size}) => {
+const LinksHeader: React.FC = () => {
 
      // Hooks para manejar si se muestran los modales o no
   const [modalOptions, setModalOptions] = useState<boolean>(false);
@@ -21,7 +18,7 @@ const LinksHeader: React.FC<Props> = ({size}) => {
   };
     // Lista de enlaces
   return (
-    <div className={`enlaces enlaces-${size}`} id="navbarSupportedContent">
+    <div className={`enlaces enlaces-desktop`} id="navbarSupportedContent">
     <ul className="lista">
       <li className="lista__item">
         {/* Link que manda a la pagina de categorias */}

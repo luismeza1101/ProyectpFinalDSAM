@@ -1,8 +1,12 @@
 import "../StyleSheets/Header.css";
 import { Link } from "react-router-dom";
 import LinksHeader from "./LinksHeader";
+import { useState } from "react";
+import LinksMobile from "./LinksMobile";
 
 const Header: React.FC = () => {
+
+  const [showLinks, setShowLinks] = useState(false)
 
   return (
     // Header de la pagina
@@ -22,17 +26,18 @@ const Header: React.FC = () => {
             aria-label="Search"
           />
         </form>
+        {/* Lista de enlaces */}
+        <LinksHeader/>
         {/* Boton de despliege, cuando sea una pantalla mas pequeña */}
         <button
           className="navbar-toggler"
           type="button"
+          onClick={() => setShowLinks(true)}
         >
-          <span className="navbar-toggler-icon"></span>
+          <i className="bi bi-list"></i>
         </button>
-        {/* Lista de enlaces */}
-        <LinksHeader size={'desktop'}/>
       </div>
-      <LinksHeader size={'mobile'}/>
+      <LinksMobile size={`${showLinks ? 'showLinks' : ''}`} setShowLinks={setShowLinks}/>
     </nav>
   );
 };

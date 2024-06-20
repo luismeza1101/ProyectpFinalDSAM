@@ -1,4 +1,4 @@
-import { Preguntas } from "./types";
+import { Preguntas, Producto } from "./types";
 
 
 //Para agregar mas preguntas el objeto debe tener un index, que sera su numero de orden en ingles, la pregunta y la respuesta en ese orden
@@ -28,3 +28,32 @@ export const preguntasFrecuentes: Preguntas[] = [
       "Aceptamos devoluciones de productos dentro de los 30 días posteriores a la compra. Los artículos deben estar en perfecto estado y con su empaque original. Puedes solicitar una devolución a través de tu cuenta en línea o contactando a nuestro equipo de atención al cliente.",
   },
 ];
+
+// Data de los productos mas vendidos para agregar
+
+export const productsMasVendidos: Producto[] = [
+  {
+    nombre: 'SALA',
+    id : crypto.randomUUID(),
+    descripcion : 'loremsadbakpd',
+    imagen : './sala.jpg'
+  },
+  {
+    nombre: 'DORMITORIO',
+    id : crypto.randomUUID(),
+    descripcion : 'loremsadbakpd',
+    imagen : './dormitorio.jpg'
+  },
+  {
+    nombre: 'ARMARIO',
+    id : crypto.randomUUID(),
+    descripcion : 'loremsadbakpd',
+    imagen : './armario.jpg'
+  },
+  {
+    nombre: 'COCINA',
+    id : crypto.randomUUID(),
+    descripcion : 'loremsadbakpd',
+    imagen : './cocina.jpg'
+  }
+]

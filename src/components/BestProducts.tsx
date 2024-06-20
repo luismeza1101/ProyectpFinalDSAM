@@ -1,4 +1,5 @@
 import '../StyleSheets/BestProducts.css'
+import { productsMasVendidos } from '../data';
 import CardBestProduct from './CardBestProduct';
 
 const BestProducts = () => {
@@ -8,10 +9,9 @@ const BestProducts = () => {
     <h2>Lo mas vendido</h2>
         <section className='bestProducts'>
           {/* Cartas de los productos mas vendidos */}
-            <CardBestProduct title ='SALA' image='./sala.jpg'/>
-            <CardBestProduct title ='DORMITORIO' image='./dormitorio.jpg'/>
-            <CardBestProduct title ='ARMARIOS' image='./roperos.jpg'/>
-            <CardBestProduct title ='COCINA' image='./cocina.jpg'/>
+            {productsMasVendidos.map(product => (
+              <CardBestProduct key={product.id} title={product.nombre} image={product.imagen} id={product.id}/>
+            ))}
         </section>
     </div>
   );

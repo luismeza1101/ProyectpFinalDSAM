@@ -1,7 +1,13 @@
 .data{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 40px;
+    margin: 40px auto;
+    align-items: center;
+}
+.data__imagen{
+    height: 430px;
+    width: 430px;
+    margin: auto;
 }
 .data__imagen img{
     object-fit: cover;
@@ -12,6 +18,7 @@
     gap: 20px;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 .general__id{
     color: #aaa;
@@ -23,7 +30,17 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
 }
 .cantidad__agregar{
     width: 40%;
+}
+@media screen and (max-width: 995px) {
+    .data{
+        grid-template-columns: 90%;
+        justify-content: center;
+        gap: 30px;
+    }
 }

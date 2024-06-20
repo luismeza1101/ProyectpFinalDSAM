@@ -4,6 +4,7 @@ import Help from "./pages/Help";
 import Home from "./pages/Home";
 import Categories from "./pages/Categories";
 import CarShoping from "./pages/CarShoping";
+import DataProductos from "./pages/DataProductos";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/help" element={<Help />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/carShop" element={<CarShoping />} />
+        <Route path="/product/:id" element={<DataProductos />} />
       </Routes>
     </BrowserRouter>
   );

@@ -4,3 +4,11 @@ export type Preguntas = {
     pregunta: string;
     respuesta: string;
   };
+
+// Estructura de la informacion de cada producto 
+export type Producto = {
+  id : string
+  nombre : string
+  descripcion : string
+  imagen : string
+}

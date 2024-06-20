@@ -14,7 +14,7 @@ const Header: React.FC = () => {
       <div className="containerNav">
         {/* Logo */}
         <Link className="navbar-brand" to="/">
-          Navbar
+          <img src="../public/logo.png" alt="LOGO" className="nav__logo"/>
         </Link>
         {/* Barra de busqueda */}
         <form className="barSearch" role="search">

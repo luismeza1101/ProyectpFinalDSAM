@@ -69,5 +69,6 @@ export default {
  - CarShoping: Pagina del carrito de compras que tiene una lista de todos los productos y un resumen de la compra
 
  - DataProductos: Pagina individual de cada producto, donde se detalla su informacion
+ 
  # Contenido CSS
  - Cada archivo tiene sus estilos en el archivo css de su mismo nombre

@@ -3,6 +3,8 @@
     display: grid;
     gap: 40px;
     margin: 0 auto;
+    text-decoration: none;
+    color: #000;
 }
 .cardBestP__img{
     width: 300px;

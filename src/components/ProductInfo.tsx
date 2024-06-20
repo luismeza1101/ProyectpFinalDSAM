@@ -1,20 +1,30 @@
 import { useState } from 'react'
+import { useParams } from 'react-router-dom';
 import '../StyleSheets/ProductInfo.css'
 import { decreaseCant, increaseCant } from '../fuctions'
+import { productsMasVendidos } from '../data';
+import { Producto } from '../types';
 
 const ProductInfo = () => {
 
     const [cantidad, setCantidad] = useState(1)
+    const { id } = useParams<{ id: string }>();
+
+    const producto: Producto | undefined = productsMasVendidos.find(p => p.id === id);
+
+    if (!producto) {
+        return <h2>Producto no encontrado</h2>;
+      }
 
   return (
     <section className="container data">
         <div className="data__imagen">
-            <img src="https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/704/PMP00001558789/full_image-1.jpg" alt="" />
+            <img src={`../../public/${producto.nombre.toLowerCase()}.jpg`} alt={`Imagen de ${producto.nombre}`} />
         </div>
         <div className="info">
             <div className="general">
-                <h5 className="general__nombre fs-2">Nombre del producto</h5>
-                <span className="general__id">SKU: 658790'</span>
+                <h5 className="general__nombre fs-2">{producto.nombre}</h5>
+                <span className="general__id">SKU: {producto.id}</span>
             </div>
             <div className="precios">
                 <table className="precios__tabla">

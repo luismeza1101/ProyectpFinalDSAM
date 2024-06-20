@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       {/* Sección donde irá información acerca de la empresa */}
       <div className="footer__grid footer__grid--empresa">
-        <h4 className="empresa__nombre">Nombre empresa</h4>
+        <h4 className="empresa__nombre">Luban</h4>
         <p className="empresa__info">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
           iste, iure porro nisi sapiente soluta, ipsam praesentium officiis
@@ -19,8 +19,20 @@ const Footer = () => {
       <div className="footer__grid footer__grid--redes">
         <h4 className="redes__titulo">Nuestras redes </h4>
         <div className="redes__rrss">
-          <i className="bi bi-facebook redes__icon"></i>
-          <i className="bi bi-instagram redes__icon"></i>
+          <a
+            href="https://www.facebook.com/profile.php?id=61561375644454"
+            target="blanck"
+            className="redes__link"
+          >
+            <i className="bi bi-facebook redes__icon"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/luban_oficial20/"
+            target="blanck"
+            className="redes__link"
+          >
+            <i className="bi bi-instagram redes__icon"></i>
+          </a>
         </div>
       </div>
       {/* Seccion donde estara links para la navegacion */}
@@ -38,7 +50,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <hr className="footer__linea"/>
+      <hr className="footer__linea" />
       <span className="footer__descripcion">&copy; Luis Meza Corilla</span>
     </footer>
   );

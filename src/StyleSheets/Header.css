@@ -77,6 +77,10 @@ input[type="search"]::-webkit-search-cancel-button {
   display: none;
   font-size: 1.5em;
 }
+.nav__logo{
+  height: 50px;
+  border-radius: 30%;
+}
 
 /* Estilos cuando la pantalla tiene menos de  991px*/
 

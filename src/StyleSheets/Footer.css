@@ -33,9 +33,12 @@
 }
 .redes__icon {
   font-size: 26px;
-  transition-duration: 0.5s;
+  color: #fff;
 }
-.redes__icon:hover {
+.redes__link{
+  transition-duration: .5s;
+}
+.redes__link:hover {
   transform: translateY(-7px);
 }
 /* Estilos de la celda de links */

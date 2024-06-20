@@ -1,27 +1,7 @@
-import React, { useState } from 'react';
 import '../StyleSheets/Login.css'; // Importar estilos CSS
 import Footer from '../components/Footer';
 
 const Login: React.FC = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Lógica de autenticación local
-    console.log('Usuario:', username);
-    console.log('Contraseña:', password);
-  };
-
-  const handleGoogleLogin = () => {
-    // Lógica de inicio de sesión con Google
-    console.log('Iniciar sesión con Google');
-  };
-
-  const handleFacebookLogin = () => {
-    // Lógica de inicio de sesión con Facebook
-    console.log('Iniciar sesión con Facebook');
-  };
 
   return (
     <>

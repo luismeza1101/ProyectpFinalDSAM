@@ -1,0 +1,28 @@
+.historia{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 300px;
+    gap: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.5)), url(../../public/Histori.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+.historia__titulo{
+    font-size: 3em;
+}
+.historia__info{
+    font-size: 1.5em;
+}
+@media screen and (max-width:940px) {
+    .historia{
+        padding: 0 100px;
+    }
+    .historia__info{
+        font-size: 1em;
+    }
+}

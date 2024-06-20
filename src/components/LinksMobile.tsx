@@ -31,6 +31,12 @@ const LinksHeader: React.FC<Props> = ({ size, setShowLinks }) => {
         onClick={() => setShowLinks(false)}
       ></i>
       <ul className="lista lista--mobile">
+      <li className="lista__item">
+        {/* Link que manda a la pagina de sobre nosotros */}
+        <Link className="lista__link" to="/aboutUs">
+          Sobre Nosotros
+        </Link>
+      </li>
         <li className="lista__item">
           {/* Link que manda a la pagina de categorias */}
           <Link className="lista__link" to="/categories">

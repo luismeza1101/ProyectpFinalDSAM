@@ -1,0 +1,42 @@
+/* FurnitureCompanySection.css */
+
+.furniture-company-section {
+    position: relative;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 44%, 49% 79%, 0 42%, 0 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/AboutUs.jpeg);
+}
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff; /* Color de texto */
+    padding: 80px 20px;
+    height: 100%;
+    width: 100%;
+    margin-top: 60px;
+  }
+  
+  .content h2 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+  

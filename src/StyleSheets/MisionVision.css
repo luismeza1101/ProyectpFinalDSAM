@@ -3,9 +3,11 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 150px auto 100px auto;
+    gap: 20px;
 }
 .mision, .vision{
     max-width: 30%;
+    min-width: 300px;
     text-align: center;
 }
 .icon{

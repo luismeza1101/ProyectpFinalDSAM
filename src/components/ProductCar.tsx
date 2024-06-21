@@ -16,7 +16,7 @@ const ProductCar = () => {
           {/* Datos del producto */}
           <div className='info grid-container'>
             {/* Nombre del producto */}
-            <p className='info__name m-0'>oidsfnodfsnodfs</p>
+            <p className='info__name m-0'>TV LG 85''</p>
             {/* Cantidad del producto */}
             <span className='info__precio'>$19.99</span>
           </div>

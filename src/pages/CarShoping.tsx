@@ -14,16 +14,6 @@ const CarShoping = () => {
         {/* Lista de todos los productos que se añadio */}
         <ul className="listP">
           <ProductCar />
-          <ProductCar />
-          <ProductCar />
-          <ProductCar />
-          <ProductCar />
-          <ProductCar />
-          <ProductCar />
-          <ProductCar />
-          <ProductCar />
-          <ProductCar />
-          <ProductCar />
         </ul>
         {/* Formulario para el resumen de todo lo agregado */}
         <ModalPago/>
